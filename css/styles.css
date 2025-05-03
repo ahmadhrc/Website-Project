@@ -11735,11 +11735,13 @@ html {
 .cool-video {
   width: 100%;
   max-width: 720px;
+  aspect-ratio: 16 / 9;
   border-radius: 1.5rem;
   box-shadow: 0 10px 30px rgba(123, 31, 162, 0.25);
-  transition: transform 0.3s ease;
-  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
+  margin: auto;
+  object-fit: cover;
   animation: glow 3s infinite;
 }
 
